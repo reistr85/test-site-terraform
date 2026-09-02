@@ -1,0 +1,14 @@
+# Configuração do deploy — gerado por static-site bootstrap
+# Infra AWS: repo terraform-aws-static-site (sites/test-site-terraform)
+
+site_key: "test-site-terraform"
+site_type: "static"
+dist_dir: "."
+
+infrastructure:
+  repo: reistr85/terraform-aws-static-site
+  site_config: sites/test-site-terraform.tfvars
+
+deploy:
+  environment: "production"
+  branch: "main"
